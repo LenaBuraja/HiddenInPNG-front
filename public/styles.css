@@ -1,0 +1,142 @@
+body, html {
+	margin: 0;
+	padding: 0;
+  font: 16px/1 sans-serif;
+	overflow-x: hidden;
+}
+
+#main {
+	width: 100%;
+}
+
+#switch {
+	padding: 40px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#textSwitch.switchText {
+	color: #00b85e;
+}
+
+#textSwitch:not(.switchText) {
+	color: #686868;
+}
+
+.image-load, .result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 240px;
+}
+#div-encript .image-load,
+.result {
+	flex-grow: 3;
+}
+
+.text-for-encript {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 240px;
+	flex-grow: 4;
+}
+
+#root {
+  height: 100%;
+}
+.inputText {
+	margin-bottom: 10px;
+}
+
+textarea.result {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+
+.image {
+	width: 400px;
+	height: 280px;
+	border: solid 1px black;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 95%;
+	resize: vertical;
+	margin: auto;
+}
+
+#div-encript {
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+}
+#div-decript {
+	justify-content: space-evenly;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#div-decript > .image-load {
+	padding-left: 16px;
+	padding-right: 8px;
+}
+
+#div-decript > .text-for-encript {
+	padding-left: 8px;
+	padding-right: 16px;
+}
+
+#bg_filter {
+	margin: 0px 20px;
+	background: #282828;
+	width: 90px;
+	height: 50px;
+	border: solid 1px #00b85e;
+	border-radius: 10px;
+}
+
+#filter {
+	margin-top: 5px;
+	transition: all 0.3s ease-in-out;
+	background: #00b85e;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+}
+
+#filter.right {
+	margin-left: 45px;
+}
+
+.submit {
+	width: 120px;
+}
+
+#div-encript.active {
+	right: 0;
+}
+
+#div-encript:not(.active) {
+	right: 100vw;
+}
+
+#div-decript.active {
+	left: 0;
+}
+
+#div-decript:not(.active) {
+	left: 100vw;
+}
